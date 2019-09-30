@@ -1,0 +1,32 @@
+/Users/cozy/code/navstacktrace/index.js:3
+  throw new Error('Hello')
+  ^
+
+Error: Hello
+    at f1 (/Users/cozy/code/navstacktrace/index.js:3:9)
+    at f2 (/Users/cozy/code/navstacktrace/index.js:7:3)
+    at f3 (/Users/cozy/code/navstacktrace/index.js:11:3)
+    at Object.<anonymous> (/Users/cozy/code/navstacktrace/index.js:14:1)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:831:12)
+
+
+/Users/cozy/code/navstacktrace/index.js:3
+  throw new Error('Hello')
+  ^
+
+Error: Hello
+    at f1 (/Users/cozy/code/navstacktrace/index.js:3:9)
+    at f2 (/Users/cozy/code/navstacktrace/index.js:7:3)
+    at f3 (/Users/cozy/code/navstacktrace/index.js:11:3)
+    at Object.<anonymous> (/Users/cozy/code/navstacktrace/index.js:14:1)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:831:12)
