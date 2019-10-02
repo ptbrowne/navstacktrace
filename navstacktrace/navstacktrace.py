@@ -47,7 +47,7 @@ def display_line_context(content, focus_line):
     last_line = min(len(content), focus_line+before_lines)
 
     for i, line in zip(range(first_line, last_line), content[first_line:last_line]):
-        cur_line = i - first_line + 1
+        cur_line = i + 1
         prefix = '--> ' if cur_line == focus_line else '    '
         debug = '%s %s' % (focus_line, i) if DEBUG else ''
         print('%s%s%s %s' % (debug, prefix, cur_line, line.rstrip()))
