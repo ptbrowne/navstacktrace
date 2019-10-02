@@ -22,7 +22,7 @@ def parse_py_stacktrace_line(line, stream):
 
 
 def js_matcher(line):
-    return line.startswith('Error:')
+    return re.search('^.*Error:', line)
 
 
 def py_matcher(line):
