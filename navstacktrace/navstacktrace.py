@@ -5,7 +5,7 @@ from collections import namedtuple
 from sys import stdin, argv
 
 from parse import find_parser
-from term import input_one_char, clear, choose, is_kitty, kitty_screen_readlines
+from term import input_one_char, clear, choose, read_current_screen
 
 StackTrace = namedtuple('StackTrace', ['kind', 'refs'])
 
@@ -134,8 +134,8 @@ def get_lines(argv):
         filename = argv[1]
         with open(filename) as f:
             lines = f.readlines()
-    elif is_kitty():
-        lines = kitty_screen_readlines()
+    else:
+        lines = read_current_screen()
     return lines
 
 

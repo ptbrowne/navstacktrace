@@ -59,10 +59,26 @@ def kitty_screen_readlines():
     return popen('kitty @ get-text ', 'r').read().split('\n')
 
 
+def tmux_screen_readlines():
+    return popen('tmux capture-pane -pS -100', 'r').read().split('\n')
+
+
 def is_kitty():
     term_info = getenv('TERMINFO')
     return 'kitty' in term_info
 
+
+def is_tmux():
+    return getenv('TMUX')
+
+
+def read_current_screen():
+    if is_kitty():
+        return kitty_screen_readlines()
+    elif is_tmux():
+        return tmux_screen_readlines()
+    else:
+        return []
 
 if __name__ == '__main__':
     # while True:
